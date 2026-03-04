@@ -1,0 +1,190 @@
+[gd_scene load_steps=17 format=3 uid="uid://ccojptieq4xkq"]
+
+[ext_resource type="Script" uid="uid://df3ix477ygjgg" path="res://Scripts/night_start.gd" id="1_kd20n"]
+[ext_resource type="Texture2D" uid="uid://d3tdgp66m3n6l" path="res://textures/Zagruzochnoe menu/5431791568584118805.jpg" id="1_mvdc7"]
+[ext_resource type="Texture2D" uid="uid://dky3pd0s3pb5r" path="res://textures/Zagruzochnoe menu/5431791568584118806.jpg" id="2_nhvnh"]
+[ext_resource type="Texture2D" uid="uid://b3nokuj3ue8mp" path="res://textures/Zagruzochnoe menu/5431791568584118807.jpg" id="3_kd20n"]
+[ext_resource type="Texture2D" uid="uid://das7esrtyuv2e" path="res://textures/Zagruzochnoe menu/5431791568584118808.jpg" id="4_wb4tc"]
+[ext_resource type="Texture2D" uid="uid://ct1155pg6lmuf" path="res://textures/Zagruzochnoe menu/5431791568584118809.jpg" id="5_0ye46"]
+[ext_resource type="AudioStream" uid="uid://yfi7k5hwwdpa" path="res://audio/okh-zria-ia-tuda-polez.mp3" id="6_hkymh"]
+[ext_resource type="Texture2D" uid="uid://c1nfqgmsbt5m5" path="res://textures/MOE LICO/5244818911906172795.jpg" id="8_wb4tc"]
+
+[sub_resource type="FontFile" id="FontFile_0svrl"]
+cache/0/42/0/ascent = 0.0
+cache/0/42/0/descent = 0.0
+cache/0/42/0/underline_position = 0.0
+cache/0/42/0/underline_thickness = 0.0
+cache/0/42/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="Animation" id="Animation_hkymh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_0ye46"]
+resource_name = "fade out"
+length = 8.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.03333334, 3.5, 8.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bwmm7"]
+_data = {
+&"RESET": SubResource("Animation_hkymh"),
+&"fade out": SubResource("Animation_0ye46")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fis44"]
+animations = [{
+"frames": [{
+"duration": 0.41,
+"texture": ExtResource("1_mvdc7")
+}, {
+"duration": 0.41,
+"texture": ExtResource("2_nhvnh")
+}, {
+"duration": 0.41,
+"texture": ExtResource("3_kd20n")
+}, {
+"duration": 0.41,
+"texture": ExtResource("4_wb4tc")
+}, {
+"duration": 0.41,
+"texture": ExtResource("5_0ye46")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="Animation" id="Animation_m3s8k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_sc64s"]
+resource_name = "krut"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.03333334, 1, 2, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-6.283185307179586, -3.141592653589793, 0.0, 3.141592653589793, 6.2831855]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pxooi"]
+_data = {
+&"RESET": SubResource("Animation_m3s8k"),
+&"krut": SubResource("Animation_sc64s")
+}
+
+[node name="Night" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kd20n")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.5
+offset_top = -24.5
+offset_right = 58.330017
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontFile_0svrl")
+theme_override_font_sizes/font_size = 42
+text = "00:00
+1-АЯ НОЧЬ "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="animation" type="AnimationPlayer" parent="Label"]
+libraries = {
+&"": SubResource("AnimationLibrary_bwmm7")
+}
+
+[node name="blip flesh" type="AnimatedSprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.21568628)
+position = Vector2(581.0001, 324.99997)
+scale = Vector2(1.0870003, 0.86066663)
+sprite_frames = SubResource("SpriteFrames_fis44")
+autoplay = "default"
+frame = 5
+frame_progress = 1.0
+
+[node name="blip" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_hkymh")
+volume_db = -28.187
+autoplay = true
+
+[node name="clock" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1082, 578)
+texture = ExtResource("8_wb4tc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="clock"]
+libraries = {
+&"": SubResource("AnimationLibrary_pxooi")
+}
