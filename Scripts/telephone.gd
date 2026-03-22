@@ -3,6 +3,7 @@ extends AnimatedSprite2D
 
 func _ready() -> void:
 	$sloman.input_event.connect(slomanInput)
+	$TelephoneI.play()
 	
 
 
@@ -12,3 +13,4 @@ func slomanInput(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 		$"../telephone".play("sloman")
 		$"Buuuuuuuuuuuuuuuuuuuuuuuuum7Sun4Owf".play()
 		$"sloman".process_mode=Node.PROCESS_MODE_DISABLED
+		$TelephoneI.stop()

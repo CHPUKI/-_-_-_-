@@ -1,5 +1,11 @@
 extends Node
 
+var leftDoorClosed=false
+var leftLightOn=false
+var rightDoorClosed=false
+var rightLightOn=false
+var camUp=false
+
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	

@@ -639,5 +639,15 @@ layout_mode = 2
 text = "Выкл звук"
 text_direction = 2
 
+[node name="OptionButton" type="OptionButton" parent="Настройки/CanvasLayer/kerfu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "FullScreen"
+popup/item_0/id = 0
+popup/item_1/text = "Window"
+popup/item_1/id = 1
+
 [connection signal="value_changed" from="Настройки/CanvasLayer/kerfu/MarginContainer/VBoxContainer/HSlider" to="Настройки/CanvasLayer/kerfu" method="_on_h_slider_value_changed"]
 [connection signal="toggled" from="Настройки/CanvasLayer/kerfu/MarginContainer/VBoxContainer/CheckBox" to="Настройки/CanvasLayer/kerfu" method="_on_check_box_toggled"]
+[connection signal="item_selected" from="Настройки/CanvasLayer/kerfu/MarginContainer/VBoxContainer/OptionButton" to="Настройки/CanvasLayer/kerfu" method="_on_option_button_item_selected"]

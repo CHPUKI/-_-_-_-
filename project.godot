@@ -23,7 +23,7 @@ Test="res://Scripts/testing/test.gd"
 
 [display]
 
-window/size/mode=4
+window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [input]
