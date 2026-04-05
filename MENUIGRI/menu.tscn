@@ -1,6 +1,5 @@
 [gd_scene load_steps=54 format=3 uid="uid://h6bkl0oeu6yl"]
 
-[ext_resource type="Texture2D" uid="uid://dsqtpsuqel44n" path="res://MENUIGRI/Лого.png" id="1_7lkq6"]
 [ext_resource type="Texture2D" uid="uid://c0l61fywwfgji" path="res://textures/MOE LICO/5244818911906172800.jpg" id="1_jshne"]
 [ext_resource type="Texture2D" uid="uid://ijp6vy120lj3" path="res://textures/MOE LICO/5244818911906172796.jpg" id="2_7lkq6"]
 [ext_resource type="Texture2D" uid="uid://nnnfy8p5pme5" path="res://textures/MOE LICO/5244818911906172797.jpg" id="3_i131p"]
@@ -8,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bica6i6ufjefw" path="res://textures/MOE LICO/5244818911906172799.jpg" id="5_xi4mb"]
 [ext_resource type="Script" uid="uid://cae3up1t3yq8m" path="res://Scripts/i.gd" id="6_cs242"]
 [ext_resource type="Texture2D" uid="uid://c1nfqgmsbt5m5" path="res://textures/MOE LICO/5244818911906172795.jpg" id="6_vm4rw"]
+[ext_resource type="Texture2D" uid="uid://ce7w4wxouc8ls" path="res://textures/power/Лого.png" id="8_4k208"]
 [ext_resource type="Texture2D" uid="uid://cflt2aw65trqv" path="res://textures/static/8.png" id="9_4v5bf"]
 [ext_resource type="Shader" uid="uid://bfog31wwniri3" path="res://shader/menu2.gdshader" id="9_vm4rw"]
 [ext_resource type="Texture2D" uid="uid://batwmjw5sgkci" path="res://textures/static/9.png" id="10_4b6fr"]
@@ -474,9 +474,10 @@ metadata/_edit_lock_ = true
 [node name="TextureRect" type="TextureRect" parent="Background"]
 offset_left = 137.0
 offset_top = 66.0
-offset_right = 528.0
-offset_bottom = 321.0
-texture = ExtResource("1_7lkq6")
+offset_right = 569.0
+offset_bottom = 309.0
+texture = ExtResource("8_4k208")
+expand_mode = 1
 
 [node name="Bliki" type="AnimatedSprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.4509804)
@@ -530,7 +531,8 @@ offset_top = 448.0
 offset_right = 429.0
 offset_bottom = 505.0
 mouse_filter = 0
-text = "ПРОДОЛЖИТЬ"
+text = "ПРОДОЛЖИТЬ
+(НЕЛЬЗЯ)"
 label_settings = SubResource("LabelSettings_i131p")
 script = ExtResource("31_i131p")
 

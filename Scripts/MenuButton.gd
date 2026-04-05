@@ -21,4 +21,5 @@ func newspaperDone(_animName : StringName) -> void:
 	if name == "NEW GAME":
 		get_tree().paused = false
 		var scene : PackedScene	= load("res://scens/night_start.tscn")
+		Global.restart = 1
 		get_tree().change_scene_to_packed(scene)

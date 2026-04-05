@@ -1,0 +1,1383 @@
+[gd_scene load_steps=156 format=3 uid="uid://cbd8al0kw3qg3"]
+
+[ext_resource type="Texture2D" uid="uid://cxye0uq8fnc78" path="res://textures/Комната как офис/хуй.png" id="1_gmbrr"]
+[ext_resource type="Texture2D" uid="uid://uimsmbvtkbvk" path="res://textures/Комната как офис/Свет слева.png" id="2_qys43"]
+[ext_resource type="Texture2D" uid="uid://pgisptoi5ty2" path="res://textures/Комната как офис/Свет справа.png" id="3_f8qol"]
+[ext_resource type="Texture2D" uid="uid://c6gl8tnrb3ax5" path="res://textures/Комната как офис/Свет с лева Серёга.png" id="5_0huf5"]
+[ext_resource type="Texture2D" uid="uid://bg7cnftqxof85" path="res://textures/Комната как офис/Свет справа Лёха.png" id="7_k22xm"]
+[ext_resource type="Texture2D" uid="uid://w3f2i26pxw7r" path="res://textures/Комната как офис/рамкадляокна.png" id="10_8ga8c"]
+[ext_resource type="Texture2D" uid="uid://blwtc7vxjthq8" path="res://textures/Комната как офис/стекло.png" id="11_brg4b"]
+[ext_resource type="AudioStream" uid="uid://exrfg3pyp573" path="res://audio/nonitka2.mp3" id="12_7017n"]
+[ext_resource type="Texture2D" uid="uid://c4eb7ykhpclll" path="res://textures/Комната как офис/Хомяк.png" id="13_acrcy"]
+[ext_resource type="Texture2D" uid="uid://swnp3rmgj8g" path="res://textures/Камера/кнопка камеры.png" id="14_aapm3"]
+[ext_resource type="AudioStream" uid="uid://dp3fim2ohurik" path="res://audio/hi-hi-hi-ha-clash-royale.mp3" id="14_clfix"]
+[ext_resource type="AudioStream" uid="uid://p6cgjnn2i1hy" path="res://audio/closecm.mp3" id="14_oisrh"]
+[ext_resource type="Script" uid="uid://cs7anlb028qt8" path="res://Scripts/hihi.gd" id="14_pwbkq"]
+[ext_resource type="Script" uid="uid://bvjmugksdp2mp" path="res://Scripts/area_2d.gd" id="15_4uh6p"]
+[ext_resource type="Texture2D" uid="uid://e2yrdrjj0sr" path="res://textures/Камера/Откр камера1.png" id="15_i5xyq"]
+[ext_resource type="Texture2D" uid="uid://cnmalkibg4eoj" path="res://textures/Дверь/дверь право/дверь с права (набросок).png" id="16_0huf5"]
+[ext_resource type="Texture2D" uid="uid://dyot3hahip80y" path="res://textures/Камера/Откр камера2.png" id="16_4uh6p"]
+[ext_resource type="Texture2D" uid="uid://dnwf53mm0a04c" path="res://textures/Камера/Откр камера3.png" id="17_ho3bl"]
+[ext_resource type="Texture2D" uid="uid://bldlykjvxbaxf" path="res://textures/Дверь/дверь право/дверь с права открыватся1.png" id="17_rh8do"]
+[ext_resource type="Texture2D" uid="uid://cuowc7enidchh" path="res://textures/Дверь/дверь право/дверь с права открыватся2.png" id="18_k22xm"]
+[ext_resource type="Texture2D" uid="uid://vff501p1p7rs" path="res://textures/Камера/Откр камера4.png" id="18_oisrh"]
+[ext_resource type="Texture2D" uid="uid://d4ai518rn5vf7" path="res://textures/Камера/Откр камера5.png" id="19_5vnfx"]
+[ext_resource type="Texture2D" uid="uid://clpchco1u1v0c" path="res://textures/Дверь/дверь право/дверь с права открыватся3.png" id="19_w18ln"]
+[ext_resource type="Texture2D" uid="uid://dmlm71toqmdno" path="res://textures/Дверь/дверь право/дверь с права открыватся4.png" id="20_1m1id"]
+[ext_resource type="Texture2D" uid="uid://dfapoia3f8xmt" path="res://textures/Камера/Откр камера6.png" id="20_67pkr"]
+[ext_resource type="Script" uid="uid://b25r5mdvavrmy" path="res://Scripts/view_camera.gd" id="20_qys43"]
+[ext_resource type="Texture2D" uid="uid://d1l34kpj5vkm6" path="res://textures/Дверь/дверь право/дверь с права открыватся5.png" id="21_8ga8c"]
+[ext_resource type="Texture2D" uid="uid://bimioi8qdyja5" path="res://textures/Камера/Откр камера7.png" id="21_eykbr"]
+[ext_resource type="Texture2D" uid="uid://ctwiktkjysvt5" path="res://textures/Дверь/дверь право/дверь с права открыватся6.png" id="22_brg4b"]
+[ext_resource type="Texture2D" uid="uid://d0r3e7i72lc5j" path="res://textures/Дверь/дверь право/дверь с права открыватся7.png" id="23_hjf0t"]
+[ext_resource type="AudioStream" uid="uid://oo2er87yyqri" path="res://audio/opencm.mp3" id="23_ho3bl"]
+[ext_resource type="Texture2D" uid="uid://bi70f4r4ns81d" path="res://textures/boing/боинг1.png" id="24_8ga8c"]
+[ext_resource type="AudioStream" uid="uid://baaphug42u83k" path="res://audio/povorotcm.mp3" id="25_5vnfx"]
+[ext_resource type="Texture2D" uid="uid://bn2ce8kg87hu6" path="res://textures/boing/боинг2.png" id="25_brg4b"]
+[ext_resource type="Texture2D" uid="uid://dtexl2klxtjbw" path="res://textures/boing/боинг3.png" id="26_hjf0t"]
+[ext_resource type="Texture2D" uid="uid://bc24wwxu3tcir" path="res://textures/boing/боинг0.png" id="27_usnad"]
+[ext_resource type="Texture2D" uid="uid://b1p5pbbxgf76r" path="res://textures/boing/боинг-1.png" id="28_xsape"]
+[ext_resource type="Texture2D" uid="uid://ce6cuctpls24t" path="res://textures/Дверь/кнопки/право/кнопки справа выкл .png" id="29_4y1lo"]
+[ext_resource type="Texture2D" uid="uid://bxc8pt1ralt53" path="res://textures/Дверь/кнопки/право/кнопки справа вкл свет выкл дверь .png" id="30_ddaju"]
+[ext_resource type="Texture2D" uid="uid://op447hau5kce" path="res://textures/Дверь/кнопки/право/кнопки справа выкл свет вкл дверь .png" id="31_ts1qh"]
+[ext_resource type="Texture2D" uid="uid://6wx2qxc2fsh6" path="res://textures/Дверь/кнопки/право/кнопки справа вкл .png" id="32_7017n"]
+[ext_resource type="Texture2D" uid="uid://duadhhcark8w4" path="res://textures/Дверь/кнопки/лево/кнопки слева выкл.png" id="33_be1vl"]
+[ext_resource type="Texture2D" uid="uid://c560gkrkl262n" path="res://textures/Дверь/кнопки/лево/кнопки слева выкл свет вкл дверь.png" id="34_lx0oy"]
+[ext_resource type="Texture2D" uid="uid://b41xsi6j06irb" path="res://textures/Дверь/кнопки/лево/кнопки слева вкл свет выкл дверь.png" id="35_r7b40"]
+[ext_resource type="Texture2D" uid="uid://1q3qna12ynno" path="res://textures/Дверь/кнопки/лево/кнопки слева вкл .png" id="36_vc8ji"]
+[ext_resource type="Texture2D" uid="uid://bsjf1o6nwwb1r" path="res://textures/Дверь/дверь лево/дверь слева (набросок).png" id="37_5ec4s"]
+[ext_resource type="Texture2D" uid="uid://d3m133hp2egwy" path="res://textures/Дверь/дверь лево/дверь слева1(набросок).png" id="38_aapm3"]
+[ext_resource type="Texture2D" uid="uid://bdjr4pkx14vv0" path="res://textures/Дверь/дверь лево/дверь слева2(набросок).png" id="39_l4dbr"]
+[ext_resource type="Texture2D" uid="uid://dwc8ml8sipytb" path="res://textures/Дверь/дверь лево/дверь слева3(набросок).png" id="40_o2on2"]
+[ext_resource type="Texture2D" uid="uid://owhvxifcnpi1" path="res://textures/Дверь/дверь лево/дверь слева5(набросок).png" id="41_03avy"]
+[ext_resource type="Script" uid="uid://dsq0rm8lqf6xa" path="res://Scripts/right_button.gd" id="42_5ec4s"]
+[ext_resource type="Texture2D" uid="uid://chxmbo4s8f7gb" path="res://textures/Дверь/дверь лево/дверь слева6(набросок).png" id="42_lq2de"]
+[ext_resource type="Texture2D" uid="uid://hfb4ml04biqw" path="res://textures/Дверь/дверь лево/дверь слева7(набросок).png" id="43_7l86l"]
+[ext_resource type="Texture2D" uid="uid://dcttrjbgbfupp" path="res://textures/Дверь/дверь лево/дверь слеваб (набросок).png" id="44_xh5km"]
+[ext_resource type="Script" uid="uid://bgl8sqf07jk0m" path="res://Scripts/left_button.gd" id="45_ddaju"]
+[ext_resource type="AudioStream" uid="uid://dj1j5n28ilmvf" path="res://audio/door-rooms-floor-door-open.mp3" id="46_ts1qh"]
+[ext_resource type="Texture2D" uid="uid://b5b5e3d1x51p5" path="res://textures/телефон/телефон да.png" id="48_r7b40"]
+[ext_resource type="Texture2D" uid="uid://b8fes1tnrawsk" path="res://textures/телефон/,ev.jpg" id="49_vc8ji"]
+[ext_resource type="Script" uid="uid://bqj7cgfmc4csr" path="res://Scripts/telephone.gd" id="50_5ec4s"]
+[ext_resource type="AudioStream" uid="uid://cpl3uwdxmmelu" path="res://audio/buuuuuuuuuuuuuuuuuuuuuuuuum_7sun4owf.mp3" id="51_5ec4s"]
+[ext_resource type="Script" uid="uid://dhbv6as4nmr5f" path="res://Scripts/foxy_ai.gd" id="62_23yi6"]
+[ext_resource type="Script" uid="uid://nc8jbkcqgake" path="res://Scripts/freddy_AI.gd" id="62_180k7"]
+[ext_resource type="Script" uid="uid://bla3jkv26juvx" path="res://Scripts/chica_AI.gd" id="62_dfa4g"]
+[ext_resource type="AudioStream" uid="uid://b2d7csw3kbrwe" path="res://audio/telephoneI.mp3" id="65_67pkr"]
+[ext_resource type="Texture2D" uid="uid://bkkf6bjodq1y1" path="res://textures/камера1/stage.png" id="66_1g0ml"]
+[ext_resource type="Shader" uid="uid://cg6qu2mq7gihw" path="res://shader/office.gdshader" id="66_07qi1"]
+[ext_resource type="Script" uid="uid://c30k4ieemutok" path="res://Scripts/bonnie_AI.gd" id="66_23yi6"]
+[ext_resource type="Texture2D" uid="uid://dhvq6kvbo1wag" path="res://textures/Камера9/шатёр 1.jpeg" id="66_481mo"]
+[ext_resource type="Texture2D" uid="uid://d20big7v58jdm" path="res://textures/Камера8/уборочная.jpg" id="67_48mww"]
+[ext_resource type="Texture2D" uid="uid://cl3tuui34uxs4" path="res://textures/камера1/stage bcf.png" id="67_ywpum"]
+[ext_resource type="Texture2D" uid="uid://casno3cm04673" path="res://textures/Камера8/уборочная b.png" id="68_bij0j"]
+[ext_resource type="Texture2D" uid="uid://dgg3tj62g4au6" path="res://textures/камера1/stage bf.png" id="68_ish3f"]
+[ext_resource type="Texture2D" uid="uid://dqho2mot4kn57" path="res://textures/Камера7/галерея.jpg" id="68_ojt3c"]
+[ext_resource type="Texture2D" uid="uid://dd51gyfvmdwyg" path="res://textures/камера1/stage fc.png" id="69_be1at"]
+[ext_resource type="Texture2D" uid="uid://d256isolvhjve" path="res://textures/Камера2/столовая комната.jpg" id="69_vvfyb"]
+[ext_resource type="Texture2D" uid="uid://c0syy455d3g5f" path="res://textures/Камера9/шатёр лежит  f.png" id="70_eh33f"]
+[ext_resource type="Texture2D" uid="uid://dnv46it0gqkmk" path="res://textures/камера1/stage f.png" id="70_eprfu"]
+[ext_resource type="Texture2D" uid="uid://bp47lyl35xq01" path="res://textures/Камера5/Восточный пролёт.jpeg" id="70_jjj74"]
+[ext_resource type="Texture2D" uid="uid://ccnp0fcyo3d81" path="res://textures/Камера7/галерея b.png" id="70_y81km"]
+[ext_resource type="Texture2D" uid="uid://dypwy2qk8554n" path="res://textures/Камера6/восточный коридор у двери.jpg" id="71_1xf5m"]
+[ext_resource type="Texture2D" uid="uid://bxutqsq1tb2fj" path="res://textures/Камера9/шатёр стоит  f.png" id="71_23yi6"]
+[ext_resource type="Texture2D" uid="uid://c4iuvht2r31kf" path="res://textures/камера1/stage f 2.png" id="71_35axl"]
+[ext_resource type="Texture2D" uid="uid://bw4soatpn7c5i" path="res://textures/Камера9/шатёр уходит  f.png" id="72_do78y"]
+[ext_resource type="Script" uid="uid://b50vpoxn38o4s" path="res://Scripts/camera.gd" id="72_rylya"]
+[ext_resource type="Shader" uid="uid://bfog31wwniri3" path="res://shader/menu2.gdshader" id="72_s7e1p"]
+[ext_resource type="Texture2D" uid="uid://0fhefaxc8t8u" path="res://textures/static/12.png" id="73_hr6u0"]
+[ext_resource type="Texture2D" uid="uid://c33u5jkth8ccp" path="res://textures/static/13.png" id="74_0cpv6"]
+[ext_resource type="Texture2D" uid="uid://brayog5i6jomk" path="res://textures/Камера9/шатёр 2.jpg" id="74_p7wnt"]
+[ext_resource type="Texture2D" uid="uid://kaiuhga1n7cs" path="res://textures/static/14.png" id="75_rylya"]
+[ext_resource type="Texture2D" uid="uid://bopcoe5s1qmgs" path="res://textures/static/15.png" id="76_c8r4x"]
+[ext_resource type="Texture2D" uid="uid://dnyptdity1skp" path="res://textures/Камера2/столовая комната b.png" id="76_labhx"]
+[ext_resource type="Texture2D" uid="uid://cetq26bff60ec" path="res://textures/Камера2/столовая комната c.png" id="77_c7848"]
+[ext_resource type="Texture2D" uid="uid://b80vsuqobkik5" path="res://textures/static/16.png" id="77_eimc5"]
+[ext_resource type="Texture2D" uid="uid://b8jvds05dh8xf" path="res://textures/Камера2/столовая комната f.png" id="78_dfa4g"]
+[ext_resource type="Texture2D" uid="uid://i6ef50gi8t50" path="res://textures/static/17.png" id="78_m6ync"]
+[ext_resource type="Texture2D" uid="uid://rbldxh0yvm4o" path="res://textures/Камера3/западный пролёт.jpg" id="78_ojt3c"]
+[ext_resource type="Texture2D" uid="uid://7i5jxngqrvef" path="res://textures/Камера11/туалет.png" id="78_vvfyb"]
+[ext_resource type="Texture2D" uid="uid://ewduun1f85j3" path="res://textures/static/18.png" id="79_a5mwy"]
+[ext_resource type="Texture2D" uid="uid://c2be068ag551x" path="res://textures/Камера4/Западный коридор у двери.jpg" id="79_vvfyb"]
+[ext_resource type="Texture2D" uid="uid://toqnishiooiv" path="res://textures/Камера5/Восточный пролёт c.png" id="80_180k7"]
+[ext_resource type="Texture2D" uid="uid://dd68ycsv6gyh5" path="res://textures/static/20.png" id="80_tqj3s"]
+[ext_resource type="Texture2D" uid="uid://btjws306hi42p" path="res://textures/Камера/запись идёт.png" id="81_0cpv6"]
+[ext_resource type="Texture2D" uid="uid://cg6w1il01luug" path="res://textures/Камера5/Восточный пролёт c2.png" id="81_onxc6"]
+[ext_resource type="Texture2D" uid="uid://sapcup1yjxhe" path="res://textures/Камера/рамка.png" id="81_rylya"]
+[ext_resource type="Texture2D" uid="uid://bkaq4hoabyu6c" path="res://textures/Камера6/восточный коридор у двери c.png" id="83_nlq21"]
+[ext_resource type="Texture2D" uid="uid://boaorjvig0wy5" path="res://textures/Камера/карта камеры.png" id="84_c8r4x"]
+[ext_resource type="Texture2D" uid="uid://bvcstnruifisr" path="res://textures/Камера6/восточный коридор у двери f.png" id="84_yquca"]
+[ext_resource type="Texture2D" uid="uid://db2lqld08vn0b" path="res://textures/Камера/кнопка камеры1.png" id="85_m6ync"]
+[ext_resource type="Texture2D" uid="uid://b4v3avmqx2qwy" path="res://textures/Камера5/Восточный пролёт f.png" id="85_u4vtf"]
+[ext_resource type="Texture2D" uid="uid://byjpuw3i0uq77" path="res://textures/Камера/кнопка камеры2.png" id="86_a5mwy"]
+[ext_resource type="Script" uid="uid://c4fxkjpue05na" path="res://Scripts/cam_button.gd" id="87_kc6a4"]
+[ext_resource type="Texture2D" uid="uid://bxfqnasy2qju5" path="res://textures/static/4.png" id="88_p0u2i"]
+[ext_resource type="Texture2D" uid="uid://d0ohgp6qtm6j0" path="res://textures/static/6.png" id="89_apliu"]
+[ext_resource type="Texture2D" uid="uid://cflt2aw65trqv" path="res://textures/static/8.png" id="90_0t8tc"]
+[ext_resource type="Texture2D" uid="uid://batwmjw5sgkci" path="res://textures/static/9.png" id="91_c7etb"]
+[ext_resource type="Texture2D" uid="uid://dq3b4g6680wbc" path="res://textures/static/10.png" id="92_qafcc"]
+[ext_resource type="Texture2D" uid="uid://dhjk510jw2nmh" path="res://textures/static/11.png" id="93_481mo"]
+[ext_resource type="Texture2D" uid="uid://d0g25qnuss86v" path="res://textures/Камера3/западный пролёт b2.png" id="94_bprjm"]
+[ext_resource type="Texture2D" uid="uid://d4cqwljnohxea" path="res://textures/Камера3/западный пролёт b.png" id="95_xj40e"]
+[ext_resource type="Texture2D" uid="uid://bnxmlmwqon77w" path="res://textures/Камера4/Западный коридор у двери b.png" id="97_mr7sy"]
+[ext_resource type="Texture2D" uid="uid://fc5lxigs702y" path="res://textures/Камера3/западный пролёт f1.png" id="98_fneas"]
+[ext_resource type="Texture2D" uid="uid://c3toh5fxqvs10" path="res://textures/Камера3/западный пролёт f2.png" id="99_bkdas"]
+[ext_resource type="Texture2D" uid="uid://dg8ybh7d62cy1" path="res://textures/Камера3/западный пролёт f3.png" id="100_gwe78"]
+[ext_resource type="Texture2D" uid="uid://dco805f4u13uw" path="res://textures/Камера3/западный пролёт f4.png" id="101_nceye"]
+[ext_resource type="Texture2D" uid="uid://b67mqgkva5u7n" path="res://textures/Камера3/западный пролёт f5.png" id="102_2g4bd"]
+[ext_resource type="Texture2D" uid="uid://d2innjf0nyk6e" path="res://textures/Камера3/западный пролёт f6.png" id="103_0nbj3"]
+[ext_resource type="AudioStream" uid="uid://i368ou7q642u" path="res://audio/minidv-camera-beep-chime-up.mp3" id="103_jjj74"]
+[ext_resource type="AudioStream" uid="uid://bjhlv8lba3q4b" path="res://audio/udar-ot-vzgliada-skaly.mp3" id="125_eh33f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8sorf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gmbrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qys43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f8qol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0huf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_k22xm")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_7017n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dlev6"]
+size = Vector2(358, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_asehv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_i5xyq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4uh6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ho3bl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_oisrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5vnfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_67pkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_eykbr")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pwbkq"]
+size = Vector2(40, 32.25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_usnad"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_hjf0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_brg4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8ga8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1m1id")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_w18ln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_k22xm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_rh8do")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0huf5")
+}],
+"loop": false,
+"name": &"close",
+"speed": 30.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ho3bl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_xh5km")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_7l86l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_lq2de")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_03avy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_o2on2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_l4dbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_aapm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_5ec4s")
+}],
+"loop": false,
+"name": &"close",
+"speed": 30.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sv1qv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_8ga8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_brg4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hjf0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_brg4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8ga8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_usnad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_xsape")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_usnad")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i5xyq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_4y1lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ts1qh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ddaju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_7017n")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ts1qh"]
+size = Vector2(37.91971, 57.9729)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7017n"]
+size = Vector2(36.56543, 57.9729)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4uh6p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_be1vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_lx0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_r7b40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_vc8ji")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aapm3"]
+animations = [{
+"frames": [{
+"duration": 15.0,
+"texture": ExtResource("48_r7b40")
+}, {
+"duration": 7.0,
+"texture": ExtResource("49_vc8ji")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"sloman",
+"speed": 30.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4dbr"]
+size = Vector2(247.42487, 202.92749)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eprfu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67_48mww")
+}],
+"loop": true,
+"name": &"backstage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68_bij0j")
+}],
+"loop": false,
+"name": &"backstage b",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68_ojt3c")
+}],
+"loop": true,
+"name": &"closet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("70_y81km")
+}],
+"loop": false,
+"name": &"closet b",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_23yi6")
+}],
+"loop": true,
+"name": &"cove f",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("72_do78y")
+}],
+"loop": true,
+"name": &"cove f2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("66_481mo")
+}],
+"loop": true,
+"name": &"cove2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_p7wnt")
+}],
+"loop": true,
+"name": &"cove3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("69_vvfyb")
+}],
+"loop": true,
+"name": &"dining area",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("76_labhx")
+}],
+"loop": true,
+"name": &"dining area b",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("77_c7848")
+}],
+"loop": true,
+"name": &"dining area c",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_dfa4g")
+}],
+"loop": true,
+"name": &"dining area f",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("70_jjj74")
+}],
+"loop": true,
+"name": &"east hall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("80_180k7")
+}],
+"loop": true,
+"name": &"east hall c",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("81_onxc6")
+}],
+"loop": true,
+"name": &"east hall c2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_1xf5m")
+}],
+"loop": true,
+"name": &"east hall corner",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("83_nlq21")
+}],
+"loop": true,
+"name": &"east hall corner c",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("84_yquca")
+}],
+"loop": true,
+"name": &"east hall corner f",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("85_u4vtf")
+}],
+"loop": true,
+"name": &"east hall f",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("70_eh33f")
+}],
+"loop": true,
+"name": &"root",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("66_1g0ml")
+}],
+"loop": false,
+"name": &"stage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67_ywpum")
+}],
+"loop": false,
+"name": &"stage bcf",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68_ish3f")
+}],
+"loop": false,
+"name": &"stage bf",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("69_be1at")
+}],
+"loop": false,
+"name": &"stage cf",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("70_eprfu")
+}],
+"loop": false,
+"name": &"stage f",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_35axl")
+}],
+"loop": false,
+"name": &"stage f 2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_vvfyb")
+}],
+"loop": true,
+"name": &"toilet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_ojt3c")
+}],
+"loop": true,
+"name": &"west hall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("94_bprjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_xj40e")
+}],
+"loop": true,
+"name": &"west hall b",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("79_vvfyb")
+}],
+"loop": true,
+"name": &"west hall corner",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("97_mr7sy")
+}],
+"loop": true,
+"name": &"west hall corner b",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("98_fneas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_bkdas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_gwe78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_nceye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_2g4bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_0nbj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_ojt3c")
+}],
+"loop": false,
+"name": &"west hall fo",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_07qi1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("camera/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(916, 324.5)]
+}
+
+[sub_resource type="Animation" id="Animation_adsjo"]
+resource_name = "pan"
+length = 16.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("camera/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5.0333333, 8, 13),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(230, 324.5), Vector2(916, 324.5), Vector2(230, 324.5), Vector2(916, 324.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1g0ml"]
+_data = {
+&"RESET": SubResource("Animation_07qi1"),
+&"pan": SubResource("Animation_adsjo")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nnmpd"]
+shader = ExtResource("72_s7e1p")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_20t5m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("73_hr6u0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_0cpv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_rylya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_c8r4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_eimc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_m6ync")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_a5mwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_tqj3s")
+}],
+"loop": true,
+"name": &"static",
+"speed": 30.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c8r4x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("81_0cpv6")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"recording",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eimc5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("84_c8r4x")
+}],
+"loop": true,
+"name": &"map",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tqj3s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("86_a5mwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_m6ync")
+}],
+"loop": true,
+"name": &"pressed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("85_m6ync")
+}],
+"loop": false,
+"name": &"unpressed",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48mww"]
+size = Vector2(430.25226, 230.40015)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ojt3c"]
+shader = ExtResource("72_s7e1p")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vvfyb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_p0u2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_apliu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_0t8tc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_c7etb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_qafcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_481mo")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1g0ml"]
+shader = ExtResource("66_07qi1")
+shader_parameter/zoom = 0.15
+shader_parameter/sharpness = 2.0
+shader_parameter/direction = Vector2(0, 1)
+shader_parameter/wrapping_mode = 0
+
+[node name="offic" type="Node2D"]
+position = Vector2(1, 1)
+
+[node name="office" type="AnimatedSprite2D" parent="."]
+position = Vector2(918.625, 325.25)
+scale = Vector2(1.7937012, 1.2685547)
+sprite_frames = SubResource("SpriteFrames_8sorf")
+script = SubResource("GDScript_7017n")
+
+[node name="Окно1" type="Sprite2D" parent="office"]
+modulate = Color(0.28118682, 0.28118688, 0.28118682, 1)
+position = Vector2(-177.97925, -63.655117)
+scale = Vector2(0.37579903, 0.39645883)
+texture = ExtResource("10_8ga8c")
+
+[node name="Окно2" type="Sprite2D" parent="office"]
+modulate = Color(0.28235295, 0.28235295, 0.28235295, 1)
+position = Vector2(184.81627, -64.85404)
+scale = Vector2(0.37116626, 0.39418152)
+texture = ExtResource("10_8ga8c")
+
+[node name="Стекло1" type="Sprite2D" parent="office"]
+modulate = Color(1, 1, 1, 0.105882354)
+position = Vector2(-180.42303, -87.69823)
+scale = Vector2(0.2607711, 0.247883)
+texture = ExtResource("11_brg4b")
+
+[node name="Стекло2" type="Sprite2D" parent="office"]
+modulate = Color(1, 1, 1, 0.105882354)
+position = Vector2(182.19814, -89.946144)
+scale = Vector2(0.24779202, 0.2461149)
+texture = ExtResource("11_brg4b")
+
+[node name="Eq" type="AudioStreamPlayer" parent="office"]
+process_mode = 3
+stream = ExtResource("12_7017n")
+volume_db = -30.0
+autoplay = true
+
+[node name="View camera" type="Camera2D" parent="." node_paths=PackedStringArray("officeSprite")]
+position = Vector2(-1, 0)
+anchor_mode = 0
+limit_left = 0
+limit_top = -3
+limit_right = 650
+limit_bottom = 645
+script = ExtResource("20_qys43")
+scrollArea = 300.0
+scrollSpeed = 1000.0
+officeSprite = NodePath("../office")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+layer = 6
+
+[node name="Closecm" type="AudioStreamPlayer" parent="GUI"]
+stream = ExtResource("14_oisrh")
+volume_db = -20.0
+pitch_scale = 0.5
+
+[node name="pan view" type="Node2D" parent="GUI"]
+
+[node name="TextureRect" type="TextureRect" parent="GUI"]
+offset_left = 320.0
+offset_top = 487.0
+offset_right = 832.0
+offset_bottom = 730.0
+mouse_filter = 2
+mouse_default_cursor_shape = 3
+texture = ExtResource("14_aapm3")
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="GUI"]
+script = ExtResource("15_4uh6p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GUI/Area2D"]
+position = Vector2(575, 617)
+shape = SubResource("RectangleShape2D_dlev6")
+
+[node name="panel" type="AnimatedSprite2D" parent="GUI"]
+modulate = Color(0.581033, 0.58103293, 0.5810329, 1)
+position = Vector2(571, 225.25)
+scale = Vector2(0.2517361, 0.24435765)
+sprite_frames = SubResource("SpriteFrames_asehv")
+
+[node name="Opencm" type="AudioStreamPlayer" parent="GUI"]
+stream = ExtResource("23_ho3bl")
+volume_db = -20.0
+
+[node name="Povorotcm" type="AudioStreamPlayer" parent="GUI"]
+stream = ExtResource("25_5vnfx")
+volume_db = -10.0
+pitch_scale = 0.8
+
+[node name="Хомяк" type="Sprite2D" parent="."]
+position = Vector2(403, 548)
+scale = Vector2(0.1819445, 0.14166676)
+texture = ExtResource("13_acrcy")
+
+[node name="Хомякхихи" type="Area2D" parent="."]
+position = Vector2(422, 208)
+script = ExtResource("14_pwbkq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Хомякхихи"]
+visible = false
+position = Vector2(-20, 343)
+shape = SubResource("RectangleShape2D_pwbkq")
+
+[node name="HiHiHiHaClashRoyale" type="AudioStreamPlayer" parent="Хомякхихи"]
+stream = ExtResource("14_clfix")
+volume_db = -40.0
+pitch_scale = 2.5
+max_polyphony = 20
+
+[node name="right door" type="AnimatedSprite2D" parent="."]
+position = Vector2(1538, 316)
+scale = Vector2(1.3659724, 0.9208333)
+sprite_frames = SubResource("SpriteFrames_usnad")
+animation = &"close"
+
+[node name="left door" type="AnimatedSprite2D" parent="."]
+position = Vector2(308, 311.5)
+scale = Vector2(1.3722224, 0.913889)
+sprite_frames = SubResource("SpriteFrames_ho3bl")
+animation = &"close"
+
+[node name="boing" type="AnimatedSprite2D" parent="."]
+position = Vector2(1143, 489)
+scale = Vector2(0.06953128, 0.065277815)
+sprite_frames = SubResource("SpriteFrames_sv1qv")
+autoplay = "default"
+frame_progress = 0.15018606
+
+[node name="right button" type="AnimatedSprite2D" parent="."]
+position = Vector2(1629.0001, 378.00003)
+scale = Vector2(0.69072163, 0.40711462)
+sprite_frames = SubResource("SpriteFrames_i5xyq")
+script = ExtResource("42_5ec4s")
+
+[node name="door" type="Area2D" parent="right button"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right button/door"]
+position = Vector2(-8.6867485, -105.621475)
+shape = SubResource("RectangleShape2D_ts1qh")
+
+[node name="light" type="Area2D" parent="right button"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right button/light"]
+position = Vector2(-7.2389693, -17.194221)
+shape = SubResource("RectangleShape2D_7017n")
+
+[node name="DoorRoomsFloorDoorOpen" type="AudioStreamPlayer" parent="right button"]
+stream = ExtResource("46_ts1qh")
+volume_db = -20.0
+pitch_scale = 2.0
+
+[node name="left button" type="AnimatedSprite2D" parent="."]
+position = Vector2(215, 317)
+scale = Vector2(0.738402, 0.4377471)
+sprite_frames = SubResource("SpriteFrames_4uh6p")
+script = ExtResource("45_ddaju")
+
+[node name="door" type="Area2D" parent="left button"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left button/door"]
+position = Vector2(5.4170837, 18.98645)
+shape = SubResource("RectangleShape2D_ts1qh")
+
+[node name="light" type="Area2D" parent="left button"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left button/light"]
+position = Vector2(5.4171014, 100.514694)
+shape = SubResource("RectangleShape2D_7017n")
+
+[node name="DoorRoomsFloorDoorOpen" type="AudioStreamPlayer" parent="left button"]
+stream = ExtResource("46_ts1qh")
+volume_db = -20.0
+pitch_scale = 2.0
+
+[node name="telephone" type="AnimatedSprite2D" parent="."]
+position = Vector2(1009.44745, 489.99997)
+scale = Vector2(0.41303593, 0.25625)
+sprite_frames = SubResource("SpriteFrames_aapm3")
+animation = &"sloman"
+script = ExtResource("50_5ec4s")
+
+[node name="sloman" type="Area2D" parent="telephone"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="telephone/sloman"]
+visible = false
+position = Vector2(-4.2294617, -11.707171)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_l4dbr")
+
+[node name="Buuuuuuuuuuuuuuuuuuuuuuuuum7Sun4Owf" type="AudioStreamPlayer" parent="telephone"]
+stream = ExtResource("51_5ec4s")
+volume_db = -20.0
+
+[node name="TelephoneI" type="AudioStreamPlayer" parent="telephone"]
+stream = ExtResource("65_67pkr")
+volume_db = -10.0
+
+[node name="foxy AI" type="Node2D" parent="."]
+script = ExtResource("62_23yi6")
+
+[node name="Timer" type="Timer" parent="foxy AI"]
+wait_time = 5.0
+autostart = true
+
+[node name="freddy AI" type="Node2D" parent="."]
+script = ExtResource("62_180k7")
+
+[node name="Timer" type="Timer" parent="freddy AI"]
+wait_time = 5.0
+autostart = true
+
+[node name="chica AI" type="Node2D" parent="."]
+script = ExtResource("62_dfa4g")
+
+[node name="Timer" type="Timer" parent="chica AI"]
+wait_time = 5.0
+autostart = true
+
+[node name="bonnie AI" type="Node2D" parent="."]
+script = ExtResource("66_23yi6")
+
+[node name="Timer" type="Timer" parent="bonnie AI"]
+wait_time = 3.0
+autostart = true
+
+[node name="camera" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Sprite" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(916, 324.5)
+scale = Vector2(1.1966146, 0.96577376)
+sprite_frames = SubResource("SpriteFrames_eprfu")
+animation = &"west hall fo"
+frame = 6
+frame_progress = 1.0
+script = ExtResource("72_rylya")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="camera/Sprite"]
+root_node = NodePath("../../..")
+libraries = {
+&"": SubResource("AnimationLibrary_1g0ml")
+}
+autoplay = "pan"
+
+[node name="static" type="AnimatedSprite2D" parent="camera"]
+modulate = Color(0.66656864, 0.6665687, 0.66656864, 0.3529412)
+self_modulate = Color(1, 1, 1, 0.37254903)
+material = SubResource("ShaderMaterial_nnmpd")
+position = Vector2(576.5, 322.5)
+scale = Vector2(0.89765626, 0.9041666)
+sprite_frames = SubResource("SpriteFrames_20t5m")
+animation = &"static"
+autoplay = "static"
+frame_progress = 0.8104792
+
+[node name="TextureRect" type="TextureRect" parent="camera"]
+modulate = Color(1, 1, 1, 0.29411766)
+offset_left = -40.0
+offset_top = -22.0
+offset_right = 1190.0
+offset_bottom = 683.0
+texture = ExtResource("81_rylya")
+
+[node name="recording" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(62, 58)
+scale = Vector2(0.64000005, 0.64000005)
+sprite_frames = SubResource("SpriteFrames_c8r4x")
+animation = &"recording"
+autoplay = "recording"
+frame_progress = 0.13850869
+
+[node name="map" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(917, 472.5)
+scale = Vector2(0.796875, 0.6113281)
+sprite_frames = SubResource("SpriteFrames_eimc5")
+animation = &"map"
+
+[node name="cam button1" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(847, 382)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "dining area"
+
+[node name="Label" type="Label" parent="camera/cam button1"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+1B"
+
+[node name="detector" type="Area2D" parent="camera/cam button1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button1/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button2" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(863, 349.00003)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"pressed"
+autoplay = "pressed"
+script = ExtResource("87_kc6a4")
+camera = "stage"
+
+[node name="Label" type="Label" parent="camera/cam button2"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+1A"
+
+[node name="detector" type="Area2D" parent="camera/cam button2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button2/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button3" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(734, 410.00003)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "backstage"
+
+[node name="Label" type="Label" parent="camera/cam button3"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+5"
+
+[node name="detector" type="Area2D" parent="camera/cam button3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button3/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button4" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(797, 443.00003)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "root"
+
+[node name="Label" type="Label" parent="camera/cam button4"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+1C"
+
+[node name="detector" type="Area2D" parent="camera/cam button4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button4/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button5" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(1066, 401)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "toilet"
+
+[node name="Label" type="Label" parent="camera/cam button5"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+7"
+
+[node name="detector" type="Area2D" parent="camera/cam button5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button5/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button6" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(1097, 513)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "kitchen"
+
+[node name="Label" type="Label" parent="camera/cam button6"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+6"
+
+[node name="detector" type="Area2D" parent="camera/cam button6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button6/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button7" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(738, 537)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "closet"
+
+[node name="Label" type="Label" parent="camera/cam button7"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+3"
+
+[node name="detector" type="Area2D" parent="camera/cam button7"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button7/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button8" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(832, 554)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "west hall"
+
+[node name="Label" type="Label" parent="camera/cam button8"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+2A"
+
+[node name="detector" type="Area2D" parent="camera/cam button8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button8/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button9" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(832, 581.00006)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "west hall corner"
+
+[node name="Label" type="Label" parent="camera/cam button9"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+2B"
+
+[node name="detector" type="Area2D" parent="camera/cam button9"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button9/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button10" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(962, 556.00006)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "east hall"
+
+[node name="Label" type="Label" parent="camera/cam button10"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+4A"
+
+[node name="detector" type="Area2D" parent="camera/cam button10"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button10/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="cam button11" type="AnimatedSprite2D" parent="camera"]
+position = Vector2(961.99994, 584.00006)
+scale = Vector2(0.11621089, 0.11718746)
+sprite_frames = SubResource("SpriteFrames_tqj3s")
+animation = &"unpressed"
+script = ExtResource("87_kc6a4")
+camera = "east hall corner"
+
+[node name="Label" type="Label" parent="camera/cam button11"]
+offset_left = -197.91602
+offset_top = -93.8667
+offset_right = 215.12646
+offset_bottom = 119.4668
+theme_override_font_sizes/font_size = 80
+text = "CAM
+4B"
+
+[node name="detector" type="Area2D" parent="camera/cam button11"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="camera/cam button11/detector"]
+position = Vector2(8.60498, 12.799316)
+scale = Vector2(1, 0.99999964)
+shape = SubResource("RectangleShape2D_48mww")
+
+[node name="blipflash" type="AnimatedSprite2D" parent="camera"]
+material = SubResource("ShaderMaterial_ojt3c")
+position = Vector2(576, 327)
+scale = Vector2(0.89375, 0.9027778)
+sprite_frames = SubResource("SpriteFrames_vvfyb")
+
+[node name="UdarOtVzgliadaSkaly" type="AudioStreamPlayer" parent="camera"]
+stream = ExtResource("125_eh33f")
+pitch_scale = 0.81
+
+[node name="UdarOtVzgliadaSkaly2" type="AudioStreamPlayer" parent="camera"]
+stream = ExtResource("125_eh33f")
+pitch_scale = 5.25
+
+[node name="MinidvCameraBeepChimeUp" type="AudioStreamPlayer" parent="camera"]
+stream = ExtResource("103_jjj74")
+volume_db = -10.0
+pitch_scale = 0.7
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_1g0ml")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.3019608)
+
+[connection signal="input_event" from="Хомякхихи" to="Хомякхихи" method="_on_input_event"]
+[connection signal="input_event" from="camera/cam button1/detector" to="camera/cam button1" method="_on_detector_input_event"]

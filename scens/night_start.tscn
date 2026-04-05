@@ -155,7 +155,8 @@ grow_vertical = 2
 theme_override_fonts/font = SubResource("FontFile_0svrl")
 theme_override_font_sizes/font_size = 42
 text = "00:00
-1-АЯ НОЧЬ "
+1-АЯ НОЧЬ
+(И ЕДИНСТВЕННАЯ) "
 horizontal_alignment = 1
 vertical_alignment = 1
 
